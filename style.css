@@ -1,0 +1,186 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #0a0a0a;
+  color: #e0e0e0;
+  overflow-x: hidden;
+}
+
+
+.navbar {
+  background: rgba(10, 10, 10, 0.9);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+}
+.navbar-brand, .nav-link {
+  color: #00ffe1 !important;
+  transition: color 0.3s;
+}
+.nav-link:hover {
+  color: #ffffff !important;
+}
+
+/* Ana Sayfa */
+.hero-section {
+  height: 100vh;
+  background: url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExODg3eTZjeHBzeHM0M3dzamdtM240ajhvand3OWRxZTVxendpM3ZybSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l41lT4n6ylgZnDY88/giphy.gif') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+.hero-content {
+  z-index: 2;
+  max-width: 800px;
+}
+.hero-content h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4rem;
+  color: #00ffe1;
+  text-shadow: 0 0 10px rgba(0, 255, 225, 0.7);
+}
+.category-card {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #00ffe1;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.category-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px rgba(0, 255, 225, 0.5);
+}
+
+/* Stiller */
+.section {
+  padding: 80px 0;
+  position: relative;
+}
+.section h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  color: #00ffe1;
+  text-align: center;
+  margin-bottom: 40px;
+  text-shadow: 0 0 10px rgba(0, 255, 225, 0.5);
+}
+.content-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #333;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s;
+  animation: fadeIn 1s ease-in;
+}
+.content-card:hover {
+  transform: scale(1.05);
+}
+.content-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.content-card p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+.btn-trailer {
+  background: #00ffe1;
+  color: #0a0a0a;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+.btn-trailer:hover {
+  background: #ffffff;
+}
+
+/* Animasyon */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Filmler Bölümü */
+#movies {
+  background: url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2k5c2drenU4OXRqOHU3eWtzNDIxamFpZWMxOXZqOXdybnJmMGRrdyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XYSMpRjbZOHOo/giphy.gif') no-repeat center center/cover;
+}
+#movies::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 0;
+}
+#movies .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Oyunlar Bölümü */
+#games {
+  background: url('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMHp6cDhoeG8zODU4aG1taTVqaTk5MXBlZGdrYjhhbWxmNWJ2NWUzZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l1IBigonxrdhk7WyQ/giphy.gif') no-repeat center center/cover;
+}
+#games::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 0;
+}
+#games .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Müzikler Bölümü */
+#music {
+  background: url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNDZ3aTZ5djNiYTh5OXlydngzaGxiOTJwdXljbXFqdXowNWw1NXlkNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/dM2xuxnJCg4H6/giphy.gif') no-repeat center center/cover;
+}
+#music::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 0;
+}
+#music .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Animeler Bölümü */
+#anime {
+  background: url('https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMHBhdWc3Y291Z2ZhdTRqMWh6M25tZG45cTlzNGF6ODI2bGpncmN5NCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/PQh01joFJlU6A/giphy.gif') no-repeat center center/cover;
+}
+#anime::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 0;
+}
+#anime .container {
+  position: relative;
+  z-index: 1;
+}
